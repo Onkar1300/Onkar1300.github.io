@@ -542,3 +542,52 @@ footer {
         text-align: left;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 22px;
+    }
+
+    .topbar {
+        gap: 12px;
+    }
+
+    .topbar::before {
+        inset: -6px -8px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.88rem;
+    }
+
+    .hero-content {
+        padding-top: 16px;
+        padding-bottom: 24px;
+        gap: 24px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.1rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+    }
+
+    .hero-card {
+        padding: 16px;
+    }
+
+    .hero-photo {
+        max-width: 220px;
+    }
+
+    .section {
+        padding: 28px 16px;
+    }
+}
