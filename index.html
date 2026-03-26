@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="bg-orb orb-1"></div>
     <div class="bg-orb orb-2"></div>
 
     <!-- Hero Section -->
     <header class="hero">
         <div class="topbar container">
-            <div class="brand">Onkar Shinde</div>
+            <div class="brand"></div>
             <nav class="nav-links">
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
@@ -23,6 +24,7 @@
                 <a href="#research">Research</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
+                <a href="#leetcode">LeetCode</a>
                 <a href="#github">GitHub</a>
                 <a class="nav-cta" href="contact.html">Contact</a>
             </nav>
@@ -30,7 +32,7 @@
 
         <div class="hero-content container">
             <div class="hero-text">
-                <p class="eyebrow">Welcome to my portfolio</p>
+                <!-- <p class="eyebrow">Welcome to my portfolio</p> -->
                 <h1>Hi, I am <span>Onkar Shinde</span></h1>
                 <p class="subtitle">Master of Computer Science Student | Software Engineer</p>
                 <p class="hero-desc">I build secure, high-performance systems and scalable cloud pipelines. My recent work spans Android platform security, IoT mesh networking, and blockchain-based supply chain solutions.</p>
@@ -74,16 +76,26 @@
         <section id="education" class="section">
             <h2><i class="fas fa-graduation-cap"></i> Education</h2>
             <div class="timeline-item">
-                <h3>Master of Computer Science</h3>
+                <div class="item-header">
+                    <div class="item-title">
+                        <img class="org-logo" src="NCSU.png" alt="NCSU logo" />
+                        <h3>Master of Computer Science</h3>
+                    </div>
+                    <span class="date">Aug 2025 - Expected Jun 2027</span>
+                </div>
                 <p class="institution">North Carolina State University, Raleigh, United States</p>
-                <p class="date">Aug 2025 - Expected Jun 2027</p>
                 <p>GPA: 4 / 4</p>
                 <p>Relevant courses: Operating Systems, Neural Networks, Software Security</p>
             </div>
             <div class="timeline-item">
-                <h3>Bachelor of Engineering in Computer Engineering (Honors in Cybersecurity)</h3>
+                <div class="item-header">
+                    <div class="item-title">
+                        <img class="org-logo" src="PICT.jpg" alt="PICT logo" />
+                        <h3>Bachelor of Engineering in Computer Engineering (Honors in Cybersecurity)</h3>
+                    </div>
+                    <span class="date">Aug 2019 - July 2023</span>
+                </div>
                 <p class="institution">Pune Institute of Computer Technology, Pune, India</p>
-                <p class="date">Aug 2019 - July 2023</p>
                 <p>CGPA: 9.46 / 10</p>
                 <p>Relevant courses: Computer Networks, DSA, Software Engineering</p>
             </div>
@@ -95,18 +107,28 @@
         <section id="experience" class="section">
             <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
             <div class="timeline-item">
-                <h3>NCSU Student Researcher : Thread and IoT</h3>
+                <div class="item-header">
+                    <div class="item-title">
+                        <img class="org-logo" src="NCSU.png" alt="NCSU logo" />
+                        <h3>NCSU Student Researcher : Thread and IoT</h3>
+                    </div>
+                    <span class="date">Jan 2026 - Present</span>
+                </div>
                 <p class="company">North Carolina State University | Raleigh, NC</p>
-                <p class="date">Jan 2026 - Present</p>
                 <ul>
                     <li>Leading the integration of <em>Matter</em> over <em>Thread</em> networks using C++, Python, and Rust under Prof. Mohammad Shahzad, focusing on cross-vendor device compatibility.</li>
                     <li>Conducting comparative analysis of IoT communication standards (Thread, IPv6, 6LoWPAN) to support the lab's research on scalable mesh networking.</li>
                 </ul>
             </div>
             <div class="timeline-item">
-                <h3>Software Engineer</h3>
+                <div class="item-header">
+                    <div class="item-title">
+                        <img class="org-logo" src="Ittiam_Systems_Logo.png" alt="Ittiam Systems logo" />
+                        <h3>Software Engineer</h3>
+                    </div>
+                    <span class="date">Jul 2023 - May 2025</span>
+                </div>
                 <p class="company">Ittiam Systems | Bengaluru, India</p>
-                <p class="date">Jul 2023 - May 2025</p>
                 <ul>
                     <li>Resolved 3 Critical Vulnerabilities in core Android C++ and C libraries, <em>imagedecoder</em> and <em>media</em>, by refactoring and optimizing fuzzing modules, directly enhancing platform security.</li>
                     <li>Scaled (<em>Clusterfuzz</em>) infrastructure on <strong>Google Cloud Platform</strong> by 15x (to 1500 compute-hours) in Python and Go by architecting a high-throughput GCP Dataflow pipeline for automated regression analysis.</li>
@@ -117,18 +139,28 @@
                 </ul>
             </div>
             <div class="timeline-item">
-                <h3>Software Development Intern</h3>
+                <div class="item-header">
+                    <div class="item-title">
+                        <img class="org-logo" src="Ittiam_Systems_Logo.png" alt="Ittiam Systems logo" />
+                        <h3>Software Development Intern</h3>
+                    </div>
+                    <span class="date">May 2022 - July 2022</span>
+                </div>
                 <p class="company">Ittiam Systems | Bengaluru, India</p>
-                <p class="date">May 2022 - July 2022</p>
                 <ul>
                     <li>Implemented a mock network environment from scratch in C++ to test the RTSP protocol implemented in Android.</li>
                     <li>Created triage reports and assigned correct severity to 8 bugs from libmediaplayerservice, accelerating the QA team's patch-deployment pipeline.</li>
                 </ul>
             </div>
             <div class="timeline-item">
-                <h3>Web-dev Intern</h3>
+                <div class="item-header">
+                    <div class="item-title">
+                        <img class="org-logo" src="unitedwell_being_logo.jpg" alt="United Wellbeing logo" />
+                        <h3>Web-dev Intern</h3>
+                    </div>
+                    <span class="date">Dec 2021 - April 2022</span>
+                </div>
                 <p class="company">United Wellbeing foundation | Remote</p>
-                <p class="date">Dec 2021 - April 2022</p>
                 <ul>
                     <li>Created and published a website for contacting psychology consultants for illnesses like depression and anxiety, facilitating connections for 100+ concurrent users and decreasing appointment scheduling time.</li>
                     <li>Implemented end-to-end users with roles like admin and user to ease website handling using PHP and AJAX.</li>
@@ -211,6 +243,36 @@
 
         <hr>
 
+        <!-- LeetCode Section -->
+        <section id="leetcode" class="section">
+            <h2><i class="fas fa-chart-line"></i> LeetCode</h2>
+            <div class="leetcode-widget">
+                <div class="heatmap-axis">
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Aug</span>
+                    <span>Sep</span>
+                    <span>Oct</span>
+                    <span>Nov</span>
+                    <span>Dec</span>
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                </div>
+                <div style="overflow: hidden; height: 180px; position: relative;">
+                    <iframe
+                        src="https://leetcard.jacoblin.cool/Onkar1300?theme=dark&ext=heatmap&border=0"
+                        style="border: none; width: 100%; height: 600px; position: absolute; top: -420px;"
+                        scrolling="no">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
         <!-- GitHub Activity Section -->
         <section id="github" class="section">
             <h2><i class="fab fa-github"></i> GitHub Activity</h2>
@@ -231,6 +293,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

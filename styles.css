@@ -20,14 +20,31 @@
     box-sizing: border-box;
 }
 
+    #about h2 i { color: #59d0ff; }
+    #education h2 i { color: #f1b04c; }
+    #experience h2 i { color: #7ddf87; }
+    #research h2 i { color: #c08bff; }
+    #projects h2 i { color: #ff7a7a; }
+    #skills h2 i { color: #58e4c2; }
+    #leetcode h2 i { color: #f6c453; }
+    #github h2 i { color: #9ca6ff; }
+    #contact h2 i { color: #59d0ff; }
 body {
     font-family: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
     margin: 0;
     color: var(--text);
+    font-size: 16.5px;
     background: radial-gradient(circle at 10% 10%, rgba(60, 192, 255, 0.18), transparent 45%),
         radial-gradient(circle at 90% 20%, rgba(31, 109, 255, 0.2), transparent 40%),
         linear-gradient(180deg, var(--bg-1), var(--bg-2) 45%, var(--bg-3));
     min-height: 100vh;
+}
+
+#particles-js {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
 }
 
 a {
@@ -68,6 +85,8 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .brand {
@@ -80,11 +99,11 @@ a {
     display: flex;
     align-items: center;
     gap: 18px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .nav-links a {
-    color: var(--muted);
+    color: var(--text);
     transition: color 0.2s ease;
 }
 
@@ -104,6 +123,17 @@ a {
     color: var(--text);
 }
 
+.topbar::before {
+    content: "";
+    position: absolute;
+    inset: -8px -12px;
+    background: rgba(9, 20, 40, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
 /* Hero */
 .hero {
     padding-bottom: 40px;
@@ -118,6 +148,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     align-items: center;
+    padding-top: 28px;
     padding-bottom: 40px;
 }
 
@@ -251,7 +282,7 @@ a {
 }
 
 .section {
-    padding: 36px 0;
+    padding: 36px 24px;
     scroll-margin-top: 80px;
 }
 
@@ -265,6 +296,16 @@ h2 i {
     color: var(--accent);
     margin-right: 8px;
 }
+
+#about h2 i { color: #59d0ff; }
+#education h2 i { color: #f1b04c; }
+#experience h2 i { color: #7ddf87; }
+#research h2 i { color: #c08bff; }
+#projects h2 i { color: #ff7a7a; }
+#skills h2 i { color: #58e4c2; }
+#leetcode h2 i { color: #f6c453; }
+#github h2 i { color: #9ca6ff; }
+#contact h2 i { color: #59d0ff; }
 
 hr {
     border: none;
@@ -281,6 +322,34 @@ hr {
     margin-bottom: 18px;
 }
 
+.timeline-item,
+.research-item,
+.skills-grid,
+.leetcode-widget,
+.github-widget,
+.contact-info,
+.contact-form-container {
+    transition: background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    transform-origin: center;
+}
+
+.timeline-item:hover,
+.research-item:hover,
+.skills-grid:hover,
+.leetcode-widget:hover,
+.github-widget:hover,
+.contact-info:hover,
+.contact-form-container:hover {
+    transform: scale(1.02);
+}
+
+.timeline-item:hover h3,
+.research-item:hover h3,
+.contact-info:hover h3,
+.contact-form-container:hover h3 {
+    text-shadow: 0 0 10px rgba(60, 192, 255, 0.6);
+}
+
 .timeline-item h3, .research-item h3 {
     margin-top: 0;
     margin-bottom: 8px;
@@ -292,10 +361,50 @@ hr {
     margin-bottom: 6px;
 }
 
+.item-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.item-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.org-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.item-header h3 {
+    margin: 0;
+}
+
+.date {
+    text-align: right;
+    white-space: nowrap;
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    background: var(--surface-strong);
+    border-radius: 18px;
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
 }
 
 .skill-tag {
@@ -312,6 +421,35 @@ hr {
     border-radius: 14px;
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
+}
+
+.leetcode-widget img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.leetcode-widget {
+    overflow: hidden;
+    height: auto;
+}
+
+.heatmap-axis {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 6px;
+    padding: 6px 4px 10px;
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.heatmap-axis span {
+    text-align: center;
 }
 
 /* Contact Page */
@@ -379,6 +517,7 @@ footer {
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+        font-size: 0.95rem;
     }
 
     .hero-actions {

@@ -1,4 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
+    if (window.particlesJS) {
+        window.particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 70,
+                    density: { enable: true, value_area: 900 }
+                },
+                color: { value: '#3cc0ff' },
+                shape: { type: 'circle' },
+                opacity: {
+                    value: 0.35,
+                    random: true
+                },
+                size: {
+                    value: 2.4,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 140,
+                    color: '#1f6dff',
+                    opacity: 0.25,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.2,
+                    direction: 'none',
+                    out_mode: 'out'
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'grab' },
+                    onclick: { enable: false },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 160, line_linked: { opacity: 0.4 } }
+                }
+            },
+            retina_detect: true
+        });
+    }
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
