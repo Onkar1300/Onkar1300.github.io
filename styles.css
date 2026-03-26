@@ -374,11 +374,12 @@ hr {
     align-items: center;
     gap: 10px;
     min-width: 0;
+    flex-wrap: wrap;
 }
 
 .org-logo {
-    width: 56px;
-    height: 56px;
+    width: clamp(36px, 6vw, 56px);
+    height: clamp(36px, 6vw, 56px);
     object-fit: contain;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 8px;
@@ -509,6 +510,10 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 28px;
+    }
+
     .topbar {
         flex-direction: column;
         gap: 16px;
@@ -526,5 +531,14 @@ footer {
 
     .hero-text {
         text-align: center;
+    }
+
+    .item-header {
+        align-items: flex-start;
+    }
+
+    .date {
+        width: 100%;
+        text-align: left;
     }
 }
