@@ -15,11 +15,11 @@
         <div class="container header-content">
             <div class="profile-photo">
                 <!-- Replace 'photo.jpg' with your actual photo file -->
-                <img src="https://via.placeholder.com/150" alt="Onkar Shinde">
+                <img src="profile.jpeg" alt="Onkar Shinde">
             </div>
             <div class="header-text">
                 <h1>Onkar Shinde</h1>
-                <p>Software Engineer | Researcher | Developer</p>
+                <p>Master of Computer Science Student | Software Engineer</p>
             </div>
         </div>
     </header>
@@ -32,6 +32,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Work Experience</a></li>
                 <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#github">GitHub Activity</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
@@ -45,7 +46,7 @@
         <!-- About Me Section -->
         <section id="about" class="section">
             <h2><i class="fas fa-user"></i> About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate developer with a keen interest in building scalable applications and solving complex problems. I enjoy learning new technologies and contributing to open-source projects.</p>
+            <p>I am a Master of Computer Science student at North Carolina State University, set to graduate in June 2027. With a strong foundation in Cybersecurity from my Bachelor's at Pune Institute of Computer Technology, I have honed my skills as a Software Engineer at Ittiam Systems. My expertise spans across C++, Python, and Embedded Systems, with a focus on security, optimization, and IoT. I am passionate about leveraging technology to solve real-world problems, from securing Android libraries to developing blockchain-based supply chain solutions.</p>
         </section>
 
         <hr>
@@ -54,16 +55,18 @@
         <section id="education" class="section">
             <h2><i class="fas fa-graduation-cap"></i> Education</h2>
             <div class="timeline-item">
-                <h3>Master of Science in Computer Science</h3>
-                <p class="institution">University Name, Location</p>
-                <p class="date">2020 - 2022</p>
-                <p>Focus on Artificial Intelligence and Machine Learning.</p>
+                <h3>Master of Computer Science</h3>
+                <p class="institution">North Carolina State University, Raleigh, United States</p>
+                <p class="date">Aug 2025 - Expected Jun 2027</p>
+                <p>GPA: 4 / 4</p>
+                <p>Relevant courses: Operating Systems, Neural Networks, Software Security</p>
             </div>
             <div class="timeline-item">
-                <h3>Bachelor of Engineering in Computer Science</h3>
-                <p class="institution">University Name, Location</p>
-                <p class="date">2016 - 2020</p>
-                <p>Graduated with Honors.</p>
+                <h3>Bachelor of Engineering in Computer Engineering (Honors in Cybersecurity)</h3>
+                <p class="institution">Pune Institute of Computer Technology, Pune, India</p>
+                <p class="date">Aug 2019 - July 2023</p>
+                <p>CGPA: 9.46 / 10</p>
+                <p>Relevant courses: Computer Networks, DSA, Software Engineering</p>
             </div>
         </section>
 
@@ -71,32 +74,90 @@
 
         <!-- Work Experience Section -->
         <section id="experience" class="section">
-            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
-            <div class="timeline-item">
-                <h3>Senior Software Engineer</h3>
-                <p class="company">Tech Company Inc.</p>
-                <p class="date">2022 - Present</p>
+            <h2><i cNCSU Student Researcher : Thread and IoT</h3>
+                <p class="company">North Carolina State University | Raleigh, NC</p>
+                <p class="date">Jan 2026 - Present</p>
                 <ul>
-                    <li>Led the development of the core payment processing module.</li>
-                    <li>Mentored junior developers and conducted code reviews.</li>
+                    <li>Leading the integration of <em>Matter</em> over <em>Thread</em> networks using C++, Python, and Rust under Prof. Mohammad Shahzad, focusing on cross-vendor device compatibility.</li>
+                    <li>Conducting comparative analysis of IoT communication standards (Thread, IPv6, 6LoWPAN) to support the lab's research on scalable mesh networking.</li>
                 </ul>
             </div>
             <div class="timeline-item">
-                <h3>Software Developer Intern</h3>
-                <p class="company">Startup LLC.</p>
-                <p class="date">2021 - 2022</p>
+                <h3>Software Engineer</h3>
+                <p class="company">Ittiam Systems | Bengaluru, India</p>
+                <p class="date">Jul 2023 - May 2025</p>
                 <ul>
-                    <li>contributed to the frontend redesign using React.</li>
-                    <li>Optimized backend API performance by 20%.</li>
+                    <li>Resolved 3 Critical Vulnerabilities in core Android C++ and C libraries, <em>imagedecoder</em> and <em>media</em>, by refactoring and optimizing fuzzing modules, directly enhancing platform security.</li>
+                    <li>Scaled (<em>Clusterfuzz</em>) infrastructure on <strong>Google Cloud Platform</strong> by 15x (to 1500 compute-hours) in Python and Go by architecting a high-throughput GCP Dataflow pipeline for automated regression analysis.</li>
+                    <li>Submitted bugfixes to <strong>clusterfuzz open source</strong> module in Python after carefully analyzing the production issues.</li>
+                    <li>Drove a 260% code coverage increase (25% to 90%) for the libsimpleperf C++ profiling library by re-architecting automated testing into distinct <em>reader/writer</em> modules.</li>
+                    <li>Defined strategic roadmaps for <strong>Kernel</strong> and <strong>GPU optimization</strong> through IOCTL calls by authoring technical reports and enhanced organization-wide kernel analysis.</li>
+                    <li>Deployed a scalable Docker environment to enable performance testing for complex C++ libraries including <em>libskia</em>, <em>libperfetto</em>, and <em>libmediaplayerservice</em>.</li>
                 </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Software Development Intern</h3>
+                <p class="company">Ittiam Systems | Bengaluru, India</p>
+                <p class="date">May 2022 - July 2022</p>
+                <ul>
+                    <li>Implemented a mock network environment from scratch in C++ to test the RTSP protocol implemented in Android.</li>
+                    Honeypot Paper Survey</h3>
+                <p><strong>Tags:</strong> COWRIE honeypot, Linux, Attacker detection</p>
+                <p>Compiled analysis of 3 different honeypots based on their allotted computing capacity into a <em>survey paper</em>.</p>
+                <p>Mocked the setup of a COWRIE honeypot on a local Linux system and concluded that an Orchestrator module boosts the efficiency of Medium interaction honeypots by 23%.</p>
             </div>
         </section>
 
         <hr>
-
-        <!-- Research Section -->
-        <section id="research" class="section">
-            <h2><i class="fas fa-microscope"></i> Research</h2>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="research-item">
+                <h3>Counterfeit Product Detection | Capstone Project</h3>
+                <p><strong>Tags:</strong> Smart Contracts, Ethereum, MySQL</p>
+                <ul>
+                    <li>Provided a supply chain solution using Solidity and Ethereum to prevent counterfeit product distribution by 80%.</li>
+                    <li>Created an anonymous marketplace bound by an Ethereum smart contract for transaction in SQL that can be further analyzed by companies to regulate and maintain their supply chain distribution.</li>
+                </ul>
+            </div>
+            <div class="research-item">
+                <h3>Student-Teacher Forum Website | Fullstack</h3>
+                <p><strong>Tags:</strong> PHP, SQL, Dynamic Plugins</p>
+                <ul>
+                    <li>Developed a common forum for college staff and students using PHP and SQL and enhanced interaction among peers.</li>
+                    <li>Each user can spectate anonymously and needs to sign up for posting; created roles based on permissions.</li>
+                </ul
+                <h3>Web-dev Intern</h3>
+                <p class="company">United Wellbeing foundation | Remote</p>
+                <p class="date">Dec 2021 - April 2022</p>
+                <ul>
+                    <li>Created and published a website for contacting psychology consultants for illnesses like depression and anxiety, facilitating connections for 100+ concurrent users and decreasing appointment scheduling time.</li>
+                    <li>Implemented end-to-end users with roles like admin and user to ease website handling using PHP and AJAX
+                    <li>contributed to the frontend redesign using React.</li>
+                    <li>Optimized backend API performance by 20%.</li>
+                </ul>C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Go</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">GCP</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Azure</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Android</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">AngularOnkar1300" target="_blank">Visit my GitHub Profile</a></p>
+                <!-- Example: GitHub Readme Stats or similar image link can go here -->
+                <img src="https://ghchart.rshah.org/Onkar1300
             <div class="research-item">
                 <h3>Title of Research Paper or Project</h3>
                 <p>Published in: <em>Journal or Conference Name</em></p>
