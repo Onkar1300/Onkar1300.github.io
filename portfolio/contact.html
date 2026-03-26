@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Onkar Shinde</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section (Consistent with Index) -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="profile-photo">
+                <img src="https://via.placeholder.com/150" alt="Onkar Shinde">
+            </div>
+            <div class="header-text">
+                <h1>Onkar Shinde</h1>
+                <p>Software Engineer | Researcher | Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p>I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            
+            <div class="contact-info">
+                <h3><i class="fas fa-at"></i> Email</h3>
+                <p><a href="mailto:onkar.shinde@example.com">onkar.shinde@example.com</a></p>
+                <!-- Replace with your actual email -->
+            </div>
+
+            <hr>
+
+            <div class="contact-form-container">
+                <h3>Send me a message</h3>
+                <!-- NOTE: Since this is a static site on GitHub Pages, form submissions need a backend service. 
+                     Services like Formspree or EmailJS can be used here. 
+                     Below is a standard HTML form structure. -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Onkar Shinde. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
